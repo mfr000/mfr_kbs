@@ -1,0 +1,106 @@
+For available pins, see bottom.
+
+Row 1
+===========
+vin  
+0       .       (PA3)   C00
+1       .       (PA2)   C01
+2       .       (PA0)   C02
+3       .       (PA1)   C03
+4       .       (PB5)   C04
+5       .       (PB6)   C05
+6       .       (PA8)   C06
+7       .       (PA9)   C07
+
+8       .       (PA10)  C08
+9       .       (PB7)   C09
+10      .       (PA4)   .  
+11      .       (PA7)   .  
+12      .       (PA6)   .     
+13      .       (PA5)           --- NO (LED) ---
+gnd
+14      .       (PB8)   .    
+
+reset
+vbat
+vcc
+
+Row 2
+===========
+20      .       (PC5)   C15
+19      .       (PC4)   C14
+18      .       (PC3)   C13
+17      .       (PC2)   C12
+16      .       (PC1)   C11
+15      .       (PC0)   C10
+
+vin     
+gnd     
+gnd     
+vdda    
+vcc                       
+rst     
+
+Back 1
+===========
+24      .       (PB9)   .  
+26      .       (PC10)  .  
+28      .       (PB1)   .  
+30      .       (PB11)  .  
+32      .       (PB13)  .  
+34      .       (PB15)  .  
+36      .       (PC7)   .  
+gnd
+
+Back 2
+===========
+23      .       (PC15)  .    
+25      .       (PD2)   .    
+27      .       (PB0)   .    
+29      .       (PB10)  .    
+31      .       (PB12)  .
+33      .       (PB14)  .
+35      .       (PC6)   .   
+37      .       (PC8)   .   
+
+
+AVAILABLE PINS
+==============
+PA0: D11    
+PA1: D10    
+PA2: D9 
+PA3: D8 
+PA4: D7 
+PA5: D6 
+PA6: D5 
+PA7: D4 
+
+PA8: D27    
+PA9: D26    
+PA10: D25   
+PA11: D24   
+PA12: D23   
+PA13: D22   
+PA14: D21   
+PA15: D20   
+
+PB0: D3 
+PB1: D33 --- no (LED) ---
+PB2: D2 
+PB3: D19
+PB4: D18
+PB5: D17
+PB6: D16
+PB7: D15
+PB8: D32  --- no (BUT) ---
+PB9:      --- no (USB DISC) ---
+PB10: D1
+PB11: D0
+PB12: D31
+PB13: D30   
+PB14: D29   
+PB15: D28   
+
+PC13: D14
+PC14: D13
+PC15: D12
