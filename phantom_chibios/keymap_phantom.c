@@ -39,13 +39,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K1A, K1B, K1C, K1D, K1E, K1F, K1G, K1H, K1I, K1J, K1K,           K1N,      K1O, K1P, K1Q, \
     K0A, K0B, K0C,           K0F,                K0J, K0K,      K0M, K0N,      K0O, K0P, K0Q  \
 ) { \
-/*             0         1         2         3         4         5         6         7         8         9         10        11        12        13        14        15        16   */  \
-/* 5 */   { KC_##K5A, KC_NO,    KC_##K5C, KC_##K5D, KC_##K5E, KC_##K5F, KC_##K5G, KC_##K5H, KC_##K5I, KC_##K5J, KC_##K5K, KC_##K5L, KC_##K5M, KC_##K5N, KC_##K5O, KC_##K5P, KC_##K5Q}, \
-/* 4 */   { KC_##K4A, KC_##K4B, KC_##K4C, KC_##K4D, KC_##K4E, KC_##K4F, KC_##K4G, KC_##K4H, KC_##K4I, KC_##K4J, KC_##K4K, KC_##K4L, KC_##K4M, KC_##K4N, KC_##K4O, KC_##K4P, KC_##K4Q}, \
-/* 3 */   { KC_##K3A, KC_##K3B, KC_##K3C, KC_##K3D, KC_##K3E, KC_##K3F, KC_##K3G, KC_##K3H, KC_##K3I, KC_##K3J, KC_##K3K, KC_##K3L, KC_##K3M, KC_##K3N, KC_##K3O, KC_##K3P, KC_##K3Q}, \
-/* 2 */   { KC_##K2A, KC_##K2B, KC_##K2C, KC_##K2D, KC_##K2E, KC_##K2F, KC_##K2G, KC_##K2H, KC_##K2I, KC_##K2J, KC_##K2K, KC_##K2L, KC_NO,    KC_##K2N, KC_##K2O, KC_##K2P, KC_##K2Q}, \
-/* 1 */   { KC_##K1A, KC_##K1B, KC_##K1C, KC_##K1D, KC_##K1E, KC_##K1F, KC_##K1G, KC_##K1H, KC_##K1I, KC_##K1J, KC_##K1K, KC_NO,    KC_NO,    KC_##K1N, KC_##K1O, KC_##K1P, KC_##K1Q}, \
-/* 0 */   { KC_##K0A, KC_##K0B, KC_##K0C, KC_NO,    KC_NO,    KC_##K0F, KC_NO,  KC_NO,    KC_NO,    KC_##K0J, KC_##K0K, KC_NO,    KC_##K0M, KC_##K0N, KC_##K0O, KC_##K0P, KC_##K0Q} \
+/*           0         1         2         3         4         5         6         7         8         9         10        11        12        13        14        15        16   */ \
+/* 5 */ { KC_##K5A, KC_NO,    KC_##K5C, KC_##K5D, KC_##K5E, KC_##K5F, KC_##K5G, KC_##K5H, KC_##K5I, KC_##K5J, KC_##K5K, KC_##K5L, KC_##K5M, KC_##K5N, KC_##K5O, KC_##K5P, KC_##K5Q}, \
+/* 4 */ { KC_##K4A, KC_##K4B, KC_##K4C, KC_##K4D, KC_##K4E, KC_##K4F, KC_##K4G, KC_##K4H, KC_##K4I, KC_##K4J, KC_##K4K, KC_##K4L, KC_##K4M, KC_##K4N, KC_##K4O, KC_##K4P, KC_##K4Q}, \
+/* 3 */ { KC_##K3A, KC_##K3B, KC_##K3C, KC_##K3D, KC_##K3E, KC_##K3F, KC_##K3G, KC_##K3H, KC_##K3I, KC_##K3J, KC_##K3K, KC_##K3L, KC_##K3M, KC_##K3N, KC_##K3O, KC_##K3P, KC_##K3Q}, \
+/* 2 */ { KC_##K2A, KC_##K2B, KC_##K2C, KC_##K2D, KC_##K2E, KC_##K2F, KC_##K2G, KC_##K2H, KC_##K2I, KC_##K2J, KC_##K2K, KC_##K2L, KC_NO,    KC_##K2N, KC_##K2O, KC_##K2P, KC_##K2Q}, \
+/* 1 */ { KC_##K1A, KC_##K1B, KC_##K1C, KC_##K1D, KC_##K1E, KC_##K1F, KC_##K1G, KC_##K1H, KC_##K1I, KC_##K1J, KC_##K1K, KC_NO,    KC_NO,    KC_##K1N, KC_##K1O, KC_##K1P, KC_##K1Q}, \
+/* 0 */ { KC_##K0A, KC_##K0B, KC_##K0C, KC_NO,    KC_NO,    KC_##K0F, KC_NO,    KC_NO,    KC_NO,    KC_##K0J, KC_##K0K, KC_NO,    KC_##K0M, KC_##K0N, KC_##K0O, KC_##K0P, KC_##K0Q} \
 }
 
 #define KEYMAP_ANSI( \

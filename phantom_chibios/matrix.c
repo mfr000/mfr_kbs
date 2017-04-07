@@ -129,6 +129,8 @@ uint8_t matrix_scan(void)
 
     if (debouncing) {
         if (--debouncing) {
+//            wait_ms(1);
+// MFR: getting chatter on space and other keys. Try increasing this wait.
             wait_ms(1);
 //            wait_us(500); // Wait 1/2ms
         } else {
