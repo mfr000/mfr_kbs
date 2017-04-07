@@ -15,38 +15,28 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-//#include <avr/io.h>
+#include "hal.h"
+
 #include "led.h"
 
 
 void led_set(uint8_t usb_led)
 {
-    /* MFR: what to do about this?
-     *
-    if (usb_led & (1<<USB_LED_CAPS_LOCK))
-    {
+    /* MFR: what to do about this? This is what flabbergast does for STM32F0
+     * discovery */
+    (void)usb_led;
+    if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
         // Output high.
-        DDRB |= (1<<6);
-        PORTB |= (1<<6);
-    }
-    else
-    {
-        // Output low.
-        DDRB &= ~(1<<6);
-        PORTB &= ~(1<<6);
+//        palSetPadMode(GPIOC, GPIOC_LED_GREEN, PAL_MODE_OUTPUT_PUSHPULL);
+//        palSetPad(GPIOC, GPIOC_LED_GREEN);
+    } else {
+        // HI-Z
+//        palSetPadMode(GPIOC, GPIOC_LED_GREEN, PAL_MODE_INPUT);
     }
 
-    if (usb_led & (1<<USB_LED_SCROLL_LOCK))
-    {
+    if (usb_led & (1<<USB_LED_SCROLL_LOCK)) {
         // Output high.
-        DDRB |= (1<<7);
-        PORTB |= (1<<7);
+    } else {
+        // HI-Z
     }
-    else
-    {
-        // Output low.
-        DDRB &= ~(1<<7);
-        PORTB &= ~(1<<7);
-    }
-    */
 }
