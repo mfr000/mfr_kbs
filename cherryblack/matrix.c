@@ -197,21 +197,29 @@ static void init_rows(void)
     // Input with pull-up(DDR:0, PORT:1)
 
     /* Row(sense) */
-    palSetPadMode(GPIOB, 8,  PAL_MODE_INPUT_PULLDOWN);
-    palSetPadMode(GPIOB, 9,  PAL_MODE_INPUT_PULLDOWN);
-    palSetPadMode(GPIOB, 10,  PAL_MODE_INPUT_PULLDOWN);
-    palSetPadMode(GPIOB, 11,  PAL_MODE_INPUT_PULLDOWN);
-    palSetPadMode(GPIOB, 12,  PAL_MODE_INPUT_PULLDOWN);
-    palSetPadMode(GPIOB, 13,  PAL_MODE_INPUT_PULLDOWN);
-    palSetPadMode(GPIOB, 14,  PAL_MODE_INPUT_PULLDOWN);
     palSetPadMode(GPIOB, 15,  PAL_MODE_INPUT_PULLDOWN);
+    palSetPadMode(GPIOB, 14,  PAL_MODE_INPUT_PULLDOWN);
+    palSetPadMode(GPIOB, 13,  PAL_MODE_INPUT_PULLDOWN);
+    palSetPadMode(GPIOB, 12,  PAL_MODE_INPUT_PULLDOWN);
+    palSetPadMode(GPIOB, 11,  PAL_MODE_INPUT_PULLDOWN);
+    palSetPadMode(GPIOB, 10,  PAL_MODE_INPUT_PULLDOWN);
+    palSetPadMode(GPIOB, 9,  PAL_MODE_INPUT_PULLDOWN);
+    palSetPadMode(GPIOB, 8,  PAL_MODE_INPUT_PULLDOWN);
 }
 
 static uint8_t read_rows(void)
 {
+    uint8_t v;
+
     /* MFR: we use the upper 8 bits.
      */
     return (palReadPort(GPIOB) >> 8);   // PB15-PB8
+//    v = (palReadPort(GPIOB) >> 8);   // PB15-PB8
+//    v = (v && 0xF0) >> 4 | (v && 0X0F) << 4;
+//    v = (v && 0xCC) >> 2 | (v && 0X33) << 2;
+//    v = (v && 0xAA) >> 1 | (v && 0X55) << 1;
+    
+//    return v;
 }
 
 /* Column pin configuration

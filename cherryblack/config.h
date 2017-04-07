@@ -21,14 +21,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6057
+#define PRODUCT_ID      0x6058
 #define DEVICE_VER      0x0001
 /*#define MANUFACTURER    t.m.k. */
 #define MANUFACTURER "TMK"
 #define USBSTR_MANUFACTURER    'T', '\x00', 'M', '\x00', 'K', '\x00'
 /* #define PRODUCT         Phantom */
 #define PRODUCT "TMK Chibi Phantom"
-#define USBSTR_PRODUCT         'T', '\x00', 'M', '\x00', 'K', '\x00', ' ', '\x00', 'C', '\x00', 'h', '\x00', 'i', '\x00', 'b', '\x00', 'i', '\x00', ' ', '\x00', 'P', '\x00', 'h', '\x00', 'a', '\x00', 'n', '\x00', 't', '\x00', 'o', '\x00', 'm', '\x00'
+#define USBSTR_PRODUCT         'T', '\x00', 'M', '\x00', 'K', '\x00', ' ', '\x00', 'C', '\x00', 'h', '\x00', 'i', '\x00', 'b', '\x00', 'i', '\x00', ' ', '\x00', 'C', '\x00', 'b', '\x00', 'l', '\x00', 'k', '\x00'
 #define DESCRIPTION "TMK firmware for Phantom"
 
 /* message strings */
